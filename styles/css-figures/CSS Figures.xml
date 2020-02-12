@@ -1,0 +1,193 @@
+<templateSet group="CSS Figures">
+  <template name="css-figs-square" value="display: inline-block;&#10;width: $size$;&#10;height: $size$;&#10;background: $color$;&#10;vertical-align: middle;$END$" description="CSS Figure Square" toReformat="true" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-rectangle" value="display: inline-block;&#10;width: $width$;&#10;height: $height$;&#10;background: $color$;&#10;vertical-align: middle;$END$" description="CSS Figure Rectangle" toReformat="true" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-circle" value="display: inline-block;&#10;width: $diameter$;&#10;height: $diameter$;&#10;background: $color$;&#10;border-radius: 50%;&#10;vertical-align: middle;$END$" description="CSS Figure Circle" toReformat="true" toShortenFQNames="true">
+    <variable name="diameter" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-ellipse" value="display: inline-block;&#10;width: $width$;&#10;height: $height$;&#10;background: $color$;&#10;border-radius: $width$ / $height$;&#10;vertical-align: middle;$END$" description="CSS Figure Ellipse" toReformat="true" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-tria-up" value="display: inline-block;&#10;width: 0;&#10;height: 0;&#10;border-left: $halfWidth$ solid transparent; /* 50px / 100px */&#10;border-right: $halfWidth$ solid transparent; /* 50px / 100px */&#10;border-bottom: $height$ solid $color$; /* 100px / 100px */&#10;vertical-align: middle;$END$" description="CSS Figure Triangle Up" toReformat="true" toShortenFQNames="true">
+    <variable name="halfWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-tria-down" value="display: inline-block;&#10;width: 0;&#10;height: 0;&#10;border-left: $halfWidth$ solid transparent; /* 50px / 100px */&#10;border-right: $halfWidth$ solid transparent; /* 50px / 100px */&#10;border-top: $height$ solid $color$; /* 100px / 100px */&#10;vertical-align: middle;$END$" description="CSS Figure Triangle Down" toReformat="true" toShortenFQNames="true">
+    <variable name="halfWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-tria-left" value="display: inline-block;&#10;width: 0;&#10;height: 0;&#10;border-top: $halfHeight$ solid transparent; /* 50px / 100px */&#10;border-right: $width$ solid $color$; /* 100px / 100px */&#10;border-bottom: $halfHeight$ solid transparent; /* 50px / 100px */&#10;vertical-align: middle;$END$" description="CSS Figure Triangle Left" toReformat="true" toShortenFQNames="true">
+    <variable name="halfHeight" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-tria-right" value="display: inline-block;&#10;width: 0;&#10;height: 0;&#10;border-top: $halfHeight$ solid transparent; /* 50px / 100px */&#10;border-left: $width$ solid $color$; /* 100px / 100px */&#10;border-bottom: $halfHeight$ solid transparent; /* 50px / 100px */&#10;vertical-align: middle;$END$" description="CSS Figure Triangle Right" toReformat="true" toShortenFQNames="true">
+    <variable name="halfHeight" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-tria-tl" value="display: inline-block;&#10;width: 0;&#10;height: 0;&#10;border-top: $size$ solid $color$;&#10;border-right: $size$ solid transparent;&#10;vertical-align: middle;$END$" description="CSS Figure Triangle Top-Left" toReformat="true" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-tria-tr" value="display: inline-block;&#10;width: 0;&#10;height: 0;&#10;border-top: $size$ solid $color$;&#10;border-left: $size$ solid transparent;&#10;vertical-align: middle;$END$" description="CSS Figure Triangle Top-Right" toReformat="true" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-tria-bl" value="display: inline-block;&#10;width: 0;&#10;height: 0;&#10;border-bottom: $size$ solid $color$;&#10;border-right: $size$ solid transparent;&#10;vertical-align: middle;$END$" description="CSS Figure Triangle Bottom-Left" toReformat="true" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-tria-br" value="display: inline-block;&#10;width: 0;&#10;height: 0;&#10;border-bottom: $size$ solid $color$;&#10;border-left: $size$ solid transparent;&#10;vertical-align: middle;$END$" description="CSS Figure Triangle Bottom-Right" toReformat="true" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-pargram" value="display: inline-block;&#10;width: $size$; /* 100px / 200px*100px */&#10;height: $size$; /* 100px / 200px*100px */&#10;margin-left: $margin$; /* 50px / tg(45deg)/2 */&#10;margin-right: $margin$; /* 50px / tg(45deg)/2 */&#10;transform: skew(45deg);&#10;background: $color$;&#10;vertical-align: middle;$END$" description="CSS Figure Parallelogram" toReformat="true" toShortenFQNames="true">
+    <variable name="size" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="margin" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-trapeze" value="display: inline-block;&#10;border-bottom: $height$ solid $color$; /* 100px / 200px*100px */&#10;border-left: $quarterWidth$ solid transparent; /* 50px / 200px*100px */&#10;border-right: $quarterWidth$ solid transparent; /* 50px / 200px*100px */&#10;height: 0;&#10;width: $halfWidth$; /* 100px / 200px*100px */&#10;vertical-align: middle;$END$" description="CSS Figure Trapeze" toReformat="true" toShortenFQNames="true">
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="quarterWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="halfWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-star6" value=".star-six {&#10;    display: inline-block;&#10;    width: 0;&#10;    height: 0;&#10;    border-left: $halfWidth$ solid transparent; /* 44px / 88px*100px */&#10;    border-right: $halfWidth$ solid transparent; /* 44px / 88px*100px */&#10;    border-bottom: $height75$ solid $color$; /* 75px / 88px*100px */&#10;    margin-bottom: $quarterHeight$; /* 25px / 88px*100px */&#10;    position: relative;&#10;    vertical-align: middle;&#10;}&#10;.star-six:after {&#10;    width: 0;&#10;    height: 0;&#10;    border-left: $halfWidth$ solid transparent; /* 44px / 88px*100px */&#10;    border-right: $halfWidth$ solid transparent; /* 44px / 88px*100px */&#10;    border-top: $height75$ solid $color$; /* 75px / 88px*100px */&#10;    position: absolute;&#10;    content: '';&#10;    top: $quarterHeight$; /* 25px / 88px*100px */&#10;    left: -$halfWidth$; /* 44px / 88px*100px */&#10;}$END$" description="CSS Figure Star 6" toReformat="true" toShortenFQNames="true">
+    <variable name="halfWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height75" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="quarterHeight" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-star5" value=".star-five {&#10;    display: inline-block;&#10;    margin: $marginTop$ -$marginRight$ $marginBottom$ $marginLeft$; /* 35px -5px 27px 1px / 100px */&#10;    position: relative;&#10;    color: $color$;&#10;    width: 0;&#10;    height: 0;&#10;    border-right: $width52$ solid transparent; /* 52px / 100px */&#10;    border-bottom: $height38$ solid $color$; /* 38px / 100px */&#10;    border-left: $width52$ solid transparent; /* 52px / 100px */&#10;    transform: rotate(36.5deg);&#10;    vertical-align: middle;&#10;}&#10;.star-five:before {&#10;    border-bottom: $height40$ solid $color$; /* 40px / 100px */&#10;    border-left: $width13$ solid transparent; /* 13px / 100px */&#10;    border-right: $width13$ solid transparent; /* 13px / 100px */&#10;    position: absolute;&#10;    height: 0;&#10;    width: 0;&#10;    top: -$top26$; /* 26px / 100px */&#10;    left: -$left37$; /* -37px / 100px */&#10;    display: block;&#10;    content: '';&#10;    transform: rotate(-36.5deg);&#10;&#10;}&#10;.star-five:after {&#10;    position: absolute;&#10;    display: block;&#10;    color: $color$;&#10;    top: $top4$; /* 4px / 100px */&#10;    left: -$left58$; /* -58px / 100px */&#10;    width: 0;&#10;    height: 0;&#10;    border-right: $width52$ solid transparent; /* 52px / 100px */&#10;    border-bottom: $height38$ solid $color$; /* 38px / 100px */&#10;    border-left: $width52$ solid transparent; /* 52px / 100px */&#10;    transform: rotate(-72.5deg);&#10;    content: '';&#10;}$END$" description="Css Figure Star 5" toReformat="true" toShortenFQNames="true">
+    <variable name="marginTop" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="marginRight" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="marginBottom" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="marginLeft" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width52" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height38" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height40" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width13" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="top26" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="left37" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="top4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="left58" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-pentagon" value=".pentagon {&#10;    display: inline-block;&#10;    position: relative;&#10;    width: $width62$; /* 62px / 100px*94px */&#10;    margin-top: $marginTop$; /* 36px / 100px*94px */&#10;    border-width: $height58$ $width19$ 0; /* 58px 19px / 100px*94px */&#10;    border-style: solid;&#10;    border-color: $color$ transparent;&#10;    vertical-align: middle;&#10;}&#10;.pentagon:before {&#10;    content: '';&#10;    position: absolute;&#10;    height: 0;&#10;    width: 0;&#10;    top: -$top94$; /* 94px / 100px*94px */&#10;    left: -$left19$; /* 19px / 100px*94px */&#10;    border-width: 0 $width50$ $height36$; /* 50px 36px / 100px*94px */&#10;    border-style: solid;&#10;    border-color: transparent transparent $color$;&#10;}$END$" description="CSS Figure Pentagon" toReformat="true" toShortenFQNames="true">
+    <variable name="width62" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="marginTop" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height58" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width19" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="top94" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="left19" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width50" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height36" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-hexagon" value=".hexagon {&#10;    display: inline-block;&#10;    margin-bottom: $marginSize$; /* 25px / 88px*100px */&#10;    margin-top: $marginSize$; /* 25px / 88px*100px */&#10;    width: $width$; /* 88px / 88px*100px */&#10;    height: $halfHeight$; /* 50px / 88px*100px */&#10;    background: $color$;&#10;    position: relative;&#10;    vertical-align: middle;&#10;}&#10;.hexagon:before {&#10;    content: '';&#10;    position: absolute;&#10;    top: -$marginSize$; /* 25px / 100px */&#10;    left: 0;&#10;    width: 0;&#10;    height: 0;&#10;    border-left: $halfWidth$ solid transparent; /* 44px / 88px*100px */&#10;    border-right: $halfWidth$ solid transparent; /* 44px / 88px*100px */&#10;    border-bottom: $quarterHeight$ solid $color$; /* 25px / 88px*100px */&#10;}&#10;.hexagon:after {&#10;    content: '';&#10;    position: absolute;&#10;    bottom: -$marginSize$; /* 25px / 88px*100px */&#10;    left: 0;&#10;    width: 0;&#10;    height: 0;&#10;    border-left: $halfWidth$ solid transparent; /* 44px / 88px*100px */&#10;    border-right: $halfWidth$ solid transparent; /* 44px / 88px*100px */&#10;    border-top: $quarterHeight$ solid $color$; /* 25px / 88px*100px */&#10;}$END$" description="CSS Figure Hexagon" toReformat="true" toShortenFQNames="true">
+    <variable name="marginSize" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="halfHeight" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="halfWidth" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="quarterHeight" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-octagon" value=".octagon {&#10;    display: inline-block;&#10;    width: $width$; /* 100px / 100px */&#10;    height: $height42$; /* 42px / 100px */&#10;    background: $color$;&#10;    margin-bottom: $size29$; /* 29px / 100px */&#10;    margin-top: $size29$; /* 29px / 100px */&#10;    position: relative;&#10;    vertical-align: middle;&#10;}&#10;.octagon:before {&#10;    content: '';&#10;    position: absolute;&#10;    top: -$size29$; /* -29px / 100px */&#10;    left: 0;&#10;    border-bottom: $size29$ solid $color$; /* 29px / 100px */&#10;    border-left: $size29$ solid transparent; /* 29px / 100px */&#10;    border-right: $size29$ solid transparent; /* 29px / 100px */&#10;    width: $width42$; /* 42px / 100px */&#10;    height: 0;&#10;}&#10;.octagon:after {&#10;    content: '';&#10;    position: absolute;&#10;    bottom: -$size29$; /* -29px / 100px */&#10;    left: 0;&#10;    border-top: $size29$ solid $color$; /* 29px / 100px */&#10;    border-left: $size29$ solid transparent; /* 29px / 100px */&#10;    border-right: $size29$ solid transparent; /* 29px / 100px */&#10;    width: $width42$; /* 42px / 100px */&#10;    height: 0;&#10;}$END$" description="CSS Figure Octagon" toReformat="true" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height42" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="size29" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width42" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-heart" value=".heart {&#10;    display: inline-block;&#10;    position: relative;&#10;    width: $width$; /* 100px / 100px*87px*/&#10;    height: $height$; /* 87px / 100px*87px*/&#10;    vertical-align: middle;&#10;}&#10;.heart:before,&#10;.heart:after {&#10;    position: absolute;&#10;    content: '';&#10;    top: $top2$; /* 2px / 100px*87px*/&#10;    width: $width53$; /* 53px / 100px*87px*/&#10;    height: $height85$; /* 85px / 100px*87px*/&#10;    background: $color$;&#10;    border-radius: $width53$ $width53$ 0 0; /* 53px 53px / 100px*87px*/&#10;}&#10;.heart:before {&#10;    left: $left50$; /* 50px / 100px*87px*/&#10;    transform: rotate(-45deg);&#10;    transform-origin: 0 100%;&#10;}&#10;.heart:after {&#10;    left: -$left3$; /* -3px / 100px*87px*/&#10;    transform: rotate(45deg);&#10;    transform-origin: 100% 100%;&#10;}$END$" description="CSS Figure Heart" toReformat="true" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="top2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="width53" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height85" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="color" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="left50" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="left3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="css-figs-infinity" value=".infinity {&#10;    display: inline-block;&#10;    position: relative;&#10;    width: $width$; /* 200px / 200px*92px*/&#10;    height: $height$; /* 92px / 200px*92px*/&#10;    vertical-align: middle;&#10;}&#10;.infinity:before,&#10;.infinity:after {&#10;    content: '';&#10;    display: inline-block;&#10;    width: $size60$; /* 60px / 200px*92px*/&#10;    height: $size60$; /* 60px / 200px*92px*/&#10;    border: $border$ solid red; /* 16px / 200px*92px*/&#10;}&#10;.infinity:before {&#10;    border-radius: $size60$ $size60$ 0 $size60$; /* 60px 60px 0 60px / 200px*92px*/&#10;    transform: rotate(-45deg);&#10;}&#10;.infinity:after {&#10;    border-radius: $size60$ $size60$ $size60$ 0; /* 60px 60px 60px 0 / 200px*92px*/&#10;    margin-left: $border$; /* 16px / 200px*92px*/&#10;    transform:rotate(45deg);&#10;}$END$" description="CSS Figure Infinity" toReformat="true" toShortenFQNames="true">
+    <variable name="width" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="height" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="size60" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="border" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+</templateSet>
